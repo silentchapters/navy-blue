@@ -36,75 +36,33 @@
       background-repeat: no-repeat;
     }
 
-   .left-page {
-  width: 56%;
-  height: 100%;
-  position: relative;
-}
+    .left-page {
+      width: 56%;
+      height: 100%;
+      position: relative;
+    }
 
-.right-page {
-  width: 44%;
-  height: 100%;
-  position: relative;
-}
+    .right-page {
+      width: 44%;
+      height: 100%;
+      position: relative;
+    }
 
-   
-.message {
-  position: relative;
-  width: 80%;
-  margin-left: 12%;
-  padding-top: 65%;
-  color: #160900;
-  font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive;
-  font-size: 13px;
-  line-height: 1.55;
-  text-align: center;
-}
-    .right-message {
-  position: relative;
-  width: 75%;
-  margin-left: 10%;
-  padding-top: 38%;
-  color: #160900;
-  font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive;
-  font-size: 13px;
-  line-height: 1.7;
-  text-align: center;
-}
+    /* LEFT PAGE MESSAGE */
 
-.right-message {
-  position: relative;
-  width: 64%;
-  margin-left: 15%;
-  padding-top: 34%;
-  color: #160900;
-  font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive;
-  font-size: 13px;
-  line-height: 1.7;
-  text-align: center;
-}
+    .message {
+      position: relative;
+      width: 57%;
+      margin-left: 39%;
+      padding-top: 20%;
+      color: #160900;
+      font-family: "Lucida Calligraphy",
+                   "Lucida Handwriting", cursive;
+      font-size: 13px;
+      line-height: 1.55;
+      text-align: center;
+    }
 
-.right-message p {
-  margin-bottom: 22px;
-}
-.dedication {
-  position: relative;
-  width: 82%;
-  margin-left: 8%;
-  padding-top: 38%;
-  color: #160900;
-  font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive;
-  font-size: 13px;
-  line-height: 1.6;
-  text-align: center;
-}
-
-.dedication h2 {
-  font-size: 21px;
-  font-weight: normal;
-  color: #100600;
-  margin-bottom: 22px;
-}
     .message h2 {
       font-size: 21px;
       font-weight: normal;
@@ -116,100 +74,152 @@
       margin: 0 0 9px;
     }
 
-   
-@media (max-width: 600px) {
+    /* RIGHT PAGE MESSAGE */
 
-  .book {
-    width: 96%;
-    max-width: 100%;
-    aspect-ratio: auto;
-  }
+    .right-message {
+      position: relative;
+      width: 64%;
+      margin-left: 15%;
+      padding-top: 34%;
+      color: #160900;
+      font-family: "Lucida Calligraphy",
+                   "Lucida Handwriting", cursive;
+      font-size: 13px;
+      line-height: 1.7;
+      text-align: center;
+    }
 
-  .spread {
-    flex-direction: column;
-    height: auto;
-  }
+    .right-message p {
+      margin: 0 0 22px;
+    }
 
- .left-page {
-  width: 56%;
-  height: 100%;
-  position: relative;
-}
+    /* MOBILE LAYOUT */
 
-.right-page {
-  width: 44%;
-  height: 100%;
-  position: relative;
-}
+    @media (max-width: 600px) {
 
-  .message {
-    width: 80%;
-    margin-left: 12%;
-    padding-top: 65px;
-    font-size: 13px;
-    line-height: 1.55;
-  }
+      body {
+        align-items: flex-start;
+      }
 
-  .message h2 {
-    font-size: 19px;
-    margin-bottom: 14px;
-  }
+      .book {
+        width: 96%;
+        max-width: 100%;
+        aspect-ratio: auto;
+      }
 
-  .message p {
-    margin-bottom: 10px;
-  }
-}
+      .spread {
+        flex-direction: column;
+        height: auto;
+        background-image: none;
+      }
+
+      .left-page,
+      .right-page {
+        width: 100%;
+        height: 650px;
+        flex-shrink: 0;
+        position: relative;
+        background-image: url("blank-parchment.png");
+        background-size: 200% 100%;
+        background-repeat: no-repeat;
+      }
+
+      .left-page {
+        background-position: left center;
+      }
+
+      .right-page {
+        background-position: right center;
+      }
+
+      .message {
+        width: 80%;
+        margin-left: 12%;
+        padding-top: 65px;
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .message h2 {
+        font-size: 19px;
+        margin-bottom: 14px;
+      }
+
+      .message p {
+        margin-bottom: 10px;
+      }
+
+      .right-message {
+        width: 75%;
+        margin-left: 12%;
+        padding-top: 100px;
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .right-message p {
+        margin-bottom: 18px;
+      }
+    }
 
   </style>
 </head>
+
 <body>
 
   <div class="book">
     <div class="spread">
 
+      <!-- LEFT PAGE -->
+
       <div class="left-page">
+
         <div class="message">
 
-  <h2>⚓ ♾️ ⚓</h2>
+          <h2>⚓ ♾️ ⚓</h2>
 
-  <p><strong>Mamma 💝 💐💐</strong></p>
+          <p>
+            <strong>Mamma 💝 💐💐</strong>
+          </p>
 
-  <p>
-    I'm not here to make promises just to sound beautiful.
-    I'd rather let my actions speak and my intentions remain genuine.
-  </p>
+          <p>
+            I'm not here to make promises just to sound beautiful.
+            I'd rather let my actions speak and my intentions remain genuine.
+          </p>
 
-  <p>
-    I cannot rewrite the chapters that came before me,
-    but I hope the pages we write together will give your heart
-    a different story to remember.
-  </p>
+          <p>
+            I cannot rewrite the chapters that came before me,
+            but I hope the pages we write together will give your heart
+            a different story to remember.
+          </p>
 
-</div>
+        </div>
+
       </div>
 
-    <div class="right-page">
+      <!-- RIGHT PAGE -->
 
-  <div class="right-message">
+      <div class="right-page">
 
-    <p>
-      Let this chapter be different,
-      not because I say so,
-      but because I show you.
-    </p>
+        <div class="right-message">
 
-    <p>
-      "We love because HE first loved us."<br>
-      — 1 John 4:19
-    </p>
+          <p>
+            Let this chapter be different,
+            not because I say so,
+            but because I show you.
+          </p>
 
-    <p>💐💐💐💐💐💐</p>
+          <p>
+            "We love because HE first loved us."<br>
+            — 1 John 4:19
+          </p>
 
-    <p>Settle in my heart. 💜</p>
+          <p>💐💐💐💐💐💐</p>
 
-  </div>
+          <p>Settle in my heart. 💜</p>
 
-</div>
+        </div>
+
       </div>
 
     </div>
