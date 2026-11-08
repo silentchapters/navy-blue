@@ -13,14 +13,14 @@
     }
 
     body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #e8dfd0;
-    }
-
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e8dfd0;
+}
     .book {
       width: 900px;
       max-width: 95%;
@@ -99,10 +99,14 @@ transform-origin: center center;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 9px;
   margin-top: 22px;
-  font-size: 23px;
+  font-size: 20px;
   white-space: nowrap;
+}
+
+.book-decoration .infinity {
+  font-size: 13px;
 }
 
 .book-decoration .infinity {
@@ -113,8 +117,10 @@ transform-origin: center center;
     @media (max-width: 600px) {
 
       body {
-       align-items: center;
-      }
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 15px;
+}
 
       .book {
         width: 96%;
