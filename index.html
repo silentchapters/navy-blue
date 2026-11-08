@@ -51,17 +51,19 @@
     /* LEFT PAGE MESSAGE */
 
     .message {
-      position: relative;
-      width: 57%;
-      margin-left: 39%;
-      padding-top: 20%;
-      color: #160900;
-      font-family: "Lucida Calligraphy",
-                   "Lucida Handwriting", cursive;
-      font-size: 13px;
-      line-height: 1.55;
-      text-align: center;
-    }
+  position: relative;
+  width: 57%;
+  margin-left: 39%;
+  padding-top: 20%;
+  color: #160900;
+  font-family: "Lucida Calligraphy",
+               "Lucida Handwriting", cursive;
+  font-size: 13px;
+  line-height: 1.55;
+  text-align: center;
+  transform: rotate(-2deg);
+  transform-origin: center center;
+}
 
     .message h2 {
       font-size: 21px;
@@ -76,19 +78,20 @@
 
     /* RIGHT PAGE MESSAGE */
 
-    .right-message {
-      position: relative;
-      width: 64%;
-      margin-left: 15%;
-      padding-top: 34%;
-      color: #160900;
-      font-family: "Lucida Calligraphy",
-                   "Lucida Handwriting", cursive;
-      font-size: 13px;
-      line-height: 1.7;
-      text-align: center;
-    }
-
+   .right-message {
+  position: relative;
+  width: 68%;
+  margin-left: 8%;
+  padding-top: 34%;
+  color: #160900;
+  font-family: "Lucida Calligraphy",
+               "Lucida Handwriting", cursive;
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: center;
+  transform: rotate(-2deg);
+  transform-origin: center center;
+}
     .right-message p {
       margin: 0 0 22px;
     }
@@ -159,6 +162,10 @@
 
       .right-message p {
         margin-bottom: 18px;
+        .message,
+.right-message {
+  transform: none;
+}
       }
     }
 
