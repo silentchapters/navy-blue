@@ -102,15 +102,21 @@
 
     /* DECORATION BELOW THE BOOK */
 
-    .book-decoration {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 9px;
-      margin-top: 22px;
-      font-size: 20px;
-      white-space: nowrap;
-    }
+   .book-decoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 22px;
+  font-size: 22px;
+  position: relative;
+  z-index: 5;
+}
+
+.book-decoration .infinity {
+  font-size: 14px;
+}
 
     .book-decoration .infinity {
       font-size: 13px;
@@ -263,16 +269,21 @@
       </div>
 
     </div>
-  </div>
+     </div>
 
-  <!-- DECORATION BELOW THE BOOK -->
+    <!-- DECORATION BELOW THE BOOK -->
+    <div class="book-decoration">
+      <span>⚓</span>
+      <span>⚓</span>
+      <span>⚓</span>
+      <span>❤️‍🔥</span>
+      <span class="infinity">∞</span>
+      <span>❤️‍🔥</span>
+      <span>⚓</span>
+      <span>⚓</span>
+      <span>⚓</span>
+    </div>
 
-  <div class="book-decoration">
-    <span>⚓ ⚓ ⚓</span>
-    <span>❤️‍🔥</span>
-    <span class="infinity">∞</span>
-    <span>❤️‍🔥</span>
-    <span>⚓ ⚓ ⚓</span>
   </div>
 
 </body>
