@@ -13,18 +13,21 @@
     }
 
     body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #e8dfd0;
-}
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #e8dfd0;
+      padding: 20px 0;
+    }
+
     .book {
       width: 900px;
       max-width: 95%;
       aspect-ratio: 3 / 2;
+      flex-shrink: 0;
     }
 
     .spread {
@@ -51,19 +54,19 @@
     /* LEFT PAGE MESSAGE */
 
     .message {
-  position: relative;
-  width: 57%;
-  margin-left: 39%;
-  padding-top: 20%;
-  color: #160900;
-  font-family: "Lucida Calligraphy",
-               "Lucida Handwriting", cursive;
-  font-size: 13px;
-  line-height: 1.55;
-  text-align: center;
-  transform: rotate(-4deg);
-  transform-origin: center center;
-}
+      position: relative;
+      width: 57%;
+      margin-left: 39%;
+      padding-top: 20%;
+      color: #160900;
+      font-family: "Lucida Calligraphy",
+                   "Lucida Handwriting", cursive;
+      font-size: 13px;
+      line-height: 1.55;
+      text-align: center;
+      transform: rotate(-4deg);
+      transform-origin: center center;
+    }
 
     .message h2 {
       font-size: 21px;
@@ -78,49 +81,50 @@
 
     /* RIGHT PAGE MESSAGE */
 
-   .right-message {
-  position: relative;
-  width: 68%;
-  margin-left: 4%;
-  padding-top: 42%;
-  color: #160900;
-  font-family: "Lucida Calligraphy",
-               "Lucida Handwriting", cursive;
-  font-size: 13px;
-  line-height: 1.7;
-  text-align: center;
- transform: rotate(-5deg);
-transform-origin: center center;
-}
+    .right-message {
+      position: relative;
+      width: 68%;
+      margin-left: 4%;
+      padding-top: 42%;
+      color: #160900;
+      font-family: "Lucida Calligraphy",
+                   "Lucida Handwriting", cursive;
+      font-size: 13px;
+      line-height: 1.7;
+      text-align: center;
+      transform: rotate(-5deg);
+      transform-origin: center center;
+    }
+
     .right-message p {
       margin: 0 0 22px;
     }
-.book-decoration {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 9px;
-  margin-top: 22px;
-  font-size: 20px;
-  white-space: nowrap;
-}
 
-.book-decoration .infinity {
-  font-size: 13px;
-}
+    /* DECORATION BELOW THE BOOK */
 
-.book-decoration .infinity {
-  font-size: 15px;
-}
+    .book-decoration {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      margin-top: 22px;
+      font-size: 20px;
+      white-space: nowrap;
+    }
+
+    .book-decoration .infinity {
+      font-size: 13px;
+    }
+
     /* MOBILE LAYOUT */
 
     @media (max-width: 600px) {
 
       body {
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 15px;
-}
+        align-items: center;
+        justify-content: flex-start;
+        padding: 15px 0 25px;
+      }
 
       .book {
         width: 96%;
@@ -178,14 +182,23 @@ transform-origin: center center;
         line-height: 1.6;
       }
 
-     .right-message p {
-  margin-bottom: 18px;
-}
+      .right-message p {
+        margin-bottom: 18px;
+      }
 
-.message,
-.right-message {
-  transform: none;
-}
+      .message,
+      .right-message {
+        transform: none;
+      }
+
+      .book-decoration {
+        margin-top: 18px;
+        gap: 5px;
+        font-size: 18px;
+      }
+
+      .book-decoration .infinity {
+        font-size: 12px;
       }
     }
 
@@ -251,12 +264,16 @@ transform-origin: center center;
 
     </div>
   </div>
-<div class="book-decoration">
-  <span>⚓ ⚓ ⚓</span>
-  <span>❤️‍🔥</span>
-  <span class="infinity">∞</span>
-  <span>❤️‍🔥</span>
-  <span>⚓ ⚓ ⚓</span>
-</div>
+
+  <!-- DECORATION BELOW THE BOOK -->
+
+  <div class="book-decoration">
+    <span>⚓ ⚓ ⚓</span>
+    <span>❤️‍🔥</span>
+    <span class="infinity">∞</span>
+    <span>❤️‍🔥</span>
+    <span>⚓ ⚓ ⚓</span>
+  </div>
+
 </body>
 </html>
